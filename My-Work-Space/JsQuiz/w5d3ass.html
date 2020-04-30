@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Internet Quiz</title>
+    <style>
+        .glow {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 50px #fff, 0 0 20px #fff, 0 0 30px #e6a900, 0 0 40px #e6a900, 0 0 50px #e6a900, 0 0 60px #e6a900, 0 0 70px;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #e6a900, 0 0 40px #ffb84d, 0 0 50px #ffb84d, 0 0 60px #ffb84d, 0 0 70px #ffb84d, 0 0 80px ;
+  }
+}
+
+.buzz {
+  animation: shake 0.9s;
+  animation-iteration-count: 30;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    
+    </style>
+</head>
+
+<body style="background-image: url(https://cdn.wallpapersafari.com/61/98/rVKi49.jpg); background-repeat: no-repeat;">
+    <div class="container mt-5 bg-dark p-5 shadow-lg" style="background-image: url(https://ak8.picdn.net/shutterstock/videos/16214188/thumb/1.jpg);">
+        <div class="row">
+            <div class="col-lg ml-3">
+                <h3 class="text-center rounded bg-secondary p-3" id="dq"></h3>
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm-8 m-3"><input class="w-50 border-warning rounded" type="text" placeholder="Answer" id="ans"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"></div>
+                       <div class="col-sm-7 mr-4 "><button id="submit" type="button" class="btn btn-outline-warning ml-2"> Submit </button><button id="skip" type="button" class="btn btn-outline-warning ml-2 pr-4 pl-4"> Skip</button></div> 
+                </div>
+                <div>
+                <h2 id="points"></h2>
+                <h1 id="seconds"></h1>
+                <h3 id="fs" class="glow"></h3>
+                <p class="text-secondary text-monospace" id="sr">Seconds Remaining</p>
+                <h3 id="qo" class="glow"></h3>
+                <h4 id="result"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./w5d3ass.js"></script>
+</body>
+
+</html>

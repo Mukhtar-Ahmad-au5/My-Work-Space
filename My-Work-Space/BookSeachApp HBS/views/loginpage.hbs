@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/iconfinder_user-info_20797.png">
+    <title>Login page</title>
+    <style>
+        body {
+            background: linear-gradient(to right top, #040911, #003f57, #007c7c, #00b869, #a8eb12);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <center>
+        <div style="-webkit-box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.71);
+-moz-box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.71);
+box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.71);" class="container col-3 p-5 mt-5 bg-light rounded">
+            <h6 id="pName" class="font-weight-light text-info">Login into your account</h6>
+            <div>
+                <hr>
+            </div> <br>
+            <div>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sm" name="name" placeholder="username">
+                    </div>
+                <div class="form-group">
+                    <input type="password" class="form-control input-sm" name="password" placeholder="password"
+                        required="required">
+                </div>
+                <div style="font-size: smaller;">
+                    <input class="float-left mt-1" type="checkbox" id="checkbox"> Remember me &nbsp;&nbsp;</input>
+                    <a class="float-right text-info" href="#">Forgot your password?</a>
+                </div> <br>
+                <div>
+                    <button style="font-size: smaller;" type="submit" class="btn btn-success btn-lg btn-block"> <b>Sign
+                            in </b> </button>
+                </div>
+                </form> 
+        </div>
+                <footer style="font-size: small; margin-bottom: -30px;" class="text-center font-weight-lighter">
+                    <p class="mt-2"> Don't have an account yet? &nbsp;<b><a class="text-info" href="#"> Sign up
+                                here</a></b></p>
+                </footer>
+            </div>
+         
+        <br>
+        <br>
+        <br>
+        <div class="text-white">
+            <h1>
+                <i>"There is no friend as loyal as a book."</i>
+            </h1>
+            <p class="font-weight-lighter">- Ernest Hemingway</p>
+        </div>
+    </center>
+
+</body>
+
+</html>

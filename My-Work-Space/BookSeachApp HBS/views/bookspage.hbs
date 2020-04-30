@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/iconfinder_bookshelf_1055107.png">
+    <title>Books Library</title>
+    <style>
+        .jumbotron{
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRb7X6hHetErRTwMyc8SnEfMnrGQ-Wmi7-r7VGMR35TJfQRt0Oi);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+  <span style="font-family: 'gill sans';" class="text-white">
+    Welcome, {{name}}!
+  </span>
+  <form action="/logout" method="GET"><button type="submit" class="btn btn-outline-danger">Log out</button></form>
+</nav>
+        <div class="jumbotron">
+     <div class="text-white text-center mt-3"><h1>"Knowledge is power."</h1></div>
+    <br>
+            <form action="/books" method="POST" class="text-center">
+                <div><input type="text" name="language" placeholder="Prefered language"><button type="submit" class="btn-md btn-dark" method="POST">Search Books</button></div> 
+            </form>
+        </div>
+
+       <div>
+        <table style="font-size: small; font-family:'gill sans';" class="table table-striped container text-center table-hover">
+               <thead class="bg-info text-white">
+                  <tr>
+                    <th >Title</th>
+                    <th >Author</th>
+                    <th >Country</th>
+                    <th >Language</th>
+                    <th >Link</th>
+                    <th >Pages</th>
+                    <th >Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{#each data}} 
+                    <tr>
+                        <td>{{title}}</td>
+                        <td>{{author}}</td>
+                        <td>{{country}}</td>
+                        <td>{{language}}</td>
+                        <td><a href="{{link}}">{{link}}</a> </td>
+                        <td>{{pages}}</td>
+                        <td>{{year}}</td> 
+                    </tr> 
+                     {{/each}}
+                </tbody>
+            </table>
+           </div>
+</body>
+</html>

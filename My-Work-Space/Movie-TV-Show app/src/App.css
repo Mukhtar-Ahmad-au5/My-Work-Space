@@ -1,0 +1,73 @@
+body {
+  background: #1a1a1a; 
+}
+
+.link {
+  text-decoration: none;
+}
+
+.row {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navBar {
+  background: #262626;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0 0 2px white;
+}
+
+.searchInp {
+  background: #0d0d0d; 
+  border: none;
+  height: 30px;
+  width: 40%;
+  box-shadow: 0 0 1px #727171;
+  color: whitesmoke;
+}
+
+.searchBtn {
+  background: #333333; 
+  border: none;
+  font-weight: 100;
+  height: 29px;
+}
+
+.fa-search:hover {
+  color: rgb(179, 179, 179);
+  transition: 0.3s;
+}
+
+.fa-search {
+  color:  #727171;
+  font-weight: lighter;
+}
+
+.logoText {
+  font-family: 'Oswald';
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: space-around right;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #0d0d0d;
+  color: white;
+  width: 12rem;
+  margin: 1rem;
+}
+
+.mainInfo {
+  padding: 3rem;
+  background: #0d0d0d;
+  box-shadow: 0 0 3px white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
