@@ -1,4 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://mukhtartheking:0987654321@cluster0-woeco.mongodb.net/youtube-clone?retryWrites=true&w=majority",
-    "jwtSecret": "yt_myJwtSecret"
-}
