@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="body">
           <nav className="navbar">
-          <h5 className="logo mt-1"><i className="fa fa-repeat mr-2" aria-hidden="true"></i>
-              <span>Retest</span></h5>
+          <h5 className="logo mt-1"><i className="fa fa-handshake-o mr-2" aria-hidden="true"></i>
+              <span>SellOne App</span></h5>
           </nav>
           <AddProduct />
           <br/>

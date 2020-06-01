@@ -12,7 +12,6 @@ class MyBoard extends Component {
     state = {
         listName: "",
         cardName: ""
-
     }
 
     editData = (field, index) => {
@@ -25,6 +24,19 @@ class MyBoard extends Component {
         if (!destination) return true
         this.props.sorted(source.droppableId, destination.droppableId, source.index, destination.index, draggableId, BoardNum)
     }
+
+    componentDidUpdate = (prevProps, prevState) => {
+      if(prevState===this.state){
+        this.setState({
+            listName: "",
+            cardName: "",
+        })
+      }
+      if(prevProps===this.props){
+          this.setState(this.props.boards.listSet)
+      }
+    };
+    
 
     render() {
         let { index: BoardNum } = this.props.location.state
@@ -65,7 +77,7 @@ class MyBoard extends Component {
                                             </Draggable>
                                         })}
                                         {provider.placeholder}
-                                        <div className="text-center rounded addBtn">{elem.listSet ? <div><textarea placeholder="Add Card..." style={{ border: 'solid 1px rgb(165, 165, 165)' }} onChange={(e) => this.setState({ cardName: e.target.value })} rows="1" className="card-title p-2 bg-light rounded"></textarea>
+                                        <div className="text-center rounded addBtn">{elem.listSet ? <div><textarea value={this.state.cardName} placeholder="Add Card..." style={{ border: 'solid 1px rgb(165, 165, 165)' }} onChange={(e) => this.setState({ cardName: e.target.value })} rows="1" className="card-title p-2 bg-light rounded"></textarea>
                                             <button onClick={() => this.props.addCard(this.state.cardName, BoardNum, index)} className="btn btn-success">Add Card</button></div>
                                             : <div onClick={() => this.props.boardClicked(BoardNum, index)}><i className="fa fa-plus" aria-hidden="true" /> Add</div>}
                                         </div>
@@ -75,8 +87,8 @@ class MyBoard extends Component {
                             </Droppable>
                         })}
                         <div style={{ display: "inlineBlock", paddingRight: "10px", whiteSpace: "nowrap"}}>
-                            <input style={{ background: "transparent" }} placeholder="Add List..." type="text" onChange={(e) => this.setState({ listName: e.target.value })} />
-                            <button className="bg-light" onClick={() => this.props.addList(this.state.listName, BoardNum)}>Add <i className="fa fa-plus" aria-hidden="true"></i></button>
+                            <input style={{ background: "transparent" , color: "white" }} value={this.state.listName} placeholder="Add List..." type="text" onChange={(e) => this.setState({ listName: e.target.value })} />
+                            <button className="btn btn-sm bg-light" onClick={() => this.props.addList(this.state.listName, BoardNum)}>Add <i className="fa fa-plus" aria-hidden="true"></i></button>
                         </div>
                         </div>
                     </div>

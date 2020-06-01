@@ -82,7 +82,7 @@ export function addCard(data, Bindex, Lindex) {
         payload: {
             data: data,
             Bindex: Bindex,
-            Lindex: Lindex,
+            Lindex: Lindex
         }
     }
 }

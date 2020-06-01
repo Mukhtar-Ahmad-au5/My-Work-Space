@@ -4,31 +4,7 @@ let initialState = {
     userName: "",
     page: 1,
     bgImgs: [],
-    boards: [{
-        boardName: "mukhtar",
-        isSet: false,
-        BgImgUrl: "",
-        listArray: [{
-            listSet: false,
-            listName: "list 1",
-            cards: [{
-                cardName: "card 1"
-            }]
-        },
-        {
-            listSet: false,
-            listName: "list 2",
-            cards: [{
-                cardName: "card 1"
-            },
-            {
-                cardName: "card 2"
-            },
-            {
-                cardName: "card 3"
-            }]
-        }]
-    }]
+    boards: []
 }
 
 function appReducer(state = initialState, action) {
