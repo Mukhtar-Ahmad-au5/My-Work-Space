@@ -1,3 +1,26 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To run the App first you will have to install the node_modules.
+and clone/download the repository and open it with your terminal, then hit git command "npm i --save".
+on successful of cloning the modules you will have to hit another command "npm start".
+hopefully the app will run without any errors.
+
+Technologies that I have used in this project are - 
+
+1. React.js
+2. Redux
+3. Bootstrap
+
+about the calendar and its functionality -
+
+The app has two calendars(small & big) just like google which are connected to each other.
+you can navigate it with the arrow keys at the top, you can select the current date with today button at the top which brings you
+back to current date. it has a dropdown with categories to change the view of the big calendar.
+and on the big calendar you can add/edit/delete events and a reminder in a modal.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
