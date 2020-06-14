@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+        <h3 id="sideNavHead" class="ml-2 mt-3 text-info text-center">
+            User Panel <i class="fa fa-universal-access" aria-hidden="true"></i>
+            <i style="cursor: pointer;" class="fa text-white fa-times ml-4"
+                aria-hidden="true"></i>
+        </h3>
+        <hr width="80%">
+        <ul class="list-unstyled ul">
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-user-circle-o" aria-hidden="true"></i> MY PROFILE</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-tachometer" aria-hidden="true"></i> DASHBOARD</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-globe" aria-hidden="true"></i> TRACKING</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-user-secret" aria-hidden="true"></i> NODE TRACING</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-download" aria-hidden="true"></i> DOWNLOADS</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-bar-chart" aria-hidden="true"></i> ANALYTICS</li>
+            <li class="mb-2 p-2"><i class="fa ml-2 fa-yelp" aria-hidden="true"></i> HELP</li>
+            <a style="text-decoration: none; color: white;" href="./index.html"><li class="mb-2 p-2"><i class="fa ml-2 fa-sign-out" aria-hidden="true"></i> LOGOUT</li></a>
+        </ul>
+    </div>
+    <!-- Sidebar Over -->
+
+    <div class="bodyCon pb-5">
+        <div class="d-flex mt-4 ml-5">
+            <img src="./images/group-6.png" alt="">
+            <img src="./images/top.png" class="top">
+            <div class="burgerMenu mr-4 mt-3"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <!-- List Start -->
+        <div class="container mainCon col-11">
+            <div class="shrinkImg"><img width="400" height="450" src="./images/group-9.png" alt=""></div>
+            <div class="container ">
+                <div class="d-flex container mb-3">
+                    <div class="tracking">TRACKING</div>
+                    <button class="Dbtn btn dropdown-toggle ml-auto">BY DELIVERED</button>
+                </div>
+                <div class="listHeadPDiv" style="overflow-x: auto;">
+                    <div class="container listhead-width" style="min-width: 600px;">
+                        <div class="listhead">
+                            <div>S.NO</div> 
+                            <div>MSISDN</div>
+                            <div>DATE & TIME</div>
+                            <div>STATUS</div>
+                            <div>TRACK</div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">1.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">11/05/2019 & 02:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">2.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">12/07/2019 & 12:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">3.</div>
+                            <div class="ml-4">983937282739827</div>
+                            <div class="mr-2">01/03/2019 & 09:54</div>
+                            <span class="mr-5 badge badge-danger">UNDELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">4.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">24/02/2012 & 07:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">5.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">11/05/2019 & 05:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">6.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">11/05/2019 & 06:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">7.</div>
+                            <div class="ml-4">983937282739827</div>
+                            <div class="mr-2">02/09/2019 & 01:09</div>
+                            <span class="mr-5 badge badge-danger">UNDELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">8.</div>
+                            <div class="ml-4">983937282739827</div>
+                            <div class="mr-2">11/05/2019 & 12:54</div>
+                            <span class="mr-5 badge badge-danger">UNDELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">9.</div>
+                            <div class="ml-4">983937282739827</div>
+                            <div class="mr-3">19/05/2017 & 09:09</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="listdata mb-2">
+                            <div class="ml-3">10.</div>
+                            <div class="ml-3">983937282739827</div>
+                            <div class="mr-3">11/05/2019 & 12:54</div>
+                            <span class="mr-5 badge badge-success">DELIVERED</span>
+                            <div class="mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p style="font-size: smaller; font-weight: 600;" class="d-flex text-muted float-right">VIEW ALL</p>
+            </div>
+        </div>
+        <!-- List Over -->
+
+        <!-- Info Boxes Start -->
+        <div class="container col-lg-12 col-md-10 row justify-content-center">
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/path2.png" alt="">
+                    <div>SENT</div>
+                    <div style="font-weight: 600; font-size: x-large;">19283290</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/shapeF.png" alt="">
+                    <div>FAILED</div>
+                    <div style="font-weight: 600; font-size: x-large;">23300</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/shape.png" alt="">
+                    <div>UNTRUSTED</div>
+                    <div style="font-weight: 600; font-size: x-large;">19182</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/path.png" alt="">
+                    <div>DELIVERED</div>
+                    <div style="font-weight: 600; font-size: x-large;">320298</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/envelope.png" alt="">
+                    <div>PENDING</div>
+                    <div style="font-weight: 600; font-size: x-large;">1280</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="mt-3">
+                    <img src="./images/computer.png" alt="">
+                    <div>ERROR</div>
+                    <div style="font-weight: 600; font-size: x-large;">839</div>
+                </div>
+            </div>
+        </div>
+        <!-- Info Boxes Over -->
+        <div class="container Fcontainer">
+            <div class="text-muted mt-3">
+                <p style="font-weight: 600; font-size: x-large;">NODE TRACING</p>
+            </div>
+            <div class="container bg-white border rounded">
+                <img width="100%" src="./images/wireframe.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer style="position: absolute; right: 0; bottom: 0">
+        <img src="./images/footer.png" alt="">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
